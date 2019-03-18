@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caseworker Trade</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="asset/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="asset/js/bootstrap.min.js"></script>
+  <script js>
+  $(document).ready(function() {
+
+  var toggleAffix = function(affixElement, scrollElement, wrapper) {
+  
+    var height = affixElement.outerHeight(),
+        top = wrapper.offset().top;
+    
+    if (scrollElement.scrollTop() >= top){
+        wrapper.height(height);
+        affixElement.addClass("affix");
+    }
+    else {
+        affixElement.removeClass("affix");
+        wrapper.height('auto');
+    }
+      
+  };
+  
+
+  $('[data-toggle="affix"]').each(function() {
+    var ele = $(this),
+        wrapper = $('<div></div>');
+    
+    ele.before(wrapper);
+    $(window).on('scroll resize', function() {
+        toggleAffix(ele, $(this), wrapper);
+    });
+    
+    // init
+    toggleAffix(ele, $(window), wrapper);
+  });
+  
+});
+  </script>
+  <style>
+  
+  </style>
+</head>
+<body >
+	<div class="container ">
+		
+		<nav class=" navbar  navbar-expand-lg navbar-light border" data-toggle="affix">
+			<div class="container">
+				 <a class="navbar-brand" href="#"><img src="asset/images/logo.png" alt="" height="65" > Caseworker Trade</a>
+				 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+					<ul class="nav navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a class="nav-link " href="index.html"><i class="fas fa-home"></i> Home</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link active" href="product.html"><i class="fab fa-product-hunt"></i> Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-user"></i> About</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link " href="contact.html"><i class="fas fa-file-contract"></i> Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	
+	<div class="container clear ">
+		<div class="text-center l">  
+			<h2 class="h2">Products</h2>
+		</div>
+		<div class="row text-center product-list">
+			<div class="col-sm">
+			  <h4>One of three columns</h4>
+			  <img src="asset/images/images.jpg" alt="" height="200" width="320">
+			</div>
+			<div class="col-sm">
+			  <h4>One of three columns</h4>
+			  <img src="asset/images/t.jpg" alt="" height="200" width="320">
+			</div>
+			<div class="col-sm">
+			  <h4>One of three columns</h4>
+			  <img src="asset/images/image.jpg" alt="" height="200" width="320">
+			</div>
+		</div>
+		<div class="row text-center product-list">
+			<div class="col-sm">
+			  <h4>One of three columns</h4>
+			  <img src="asset/images/images.jpg" alt="" height="200" width="320">
+			</div>
+			<div class="col-sm">
+			  <h4>One of three columns</h4>
+			  <img src="asset/images/t.jpg" alt="" height="200" width="320">
+			</div>
+			<div class="col-sm">
+			  <h4>One of three columns</h4>
+			  <img src="asset/images/image.jpg" alt="" height="200" width="320">
+			</div>
+		</div>
+	</div>
+	<div class="container clear">
+		<div class="text-center l">  
+			<h2 class="h2">Products</h2>
+		</div>
+		<div class="row text-center images-hover">
+			<div class="col-sm ">
+				<div class="hovereffect">
+					<img class="" src="asset/images/900.jpg" alt="" height="400">
+					<div class="overlay">
+					   <h2>Hover effect 1</h2>
+					   <a class="info" href="#">link here</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm ">
+				<div class="hovereffect">
+					<img class="img-responsive" src="asset/images/light.jpg" alt="" height="400">
+					<div class="overlay">
+					   <h2>Hover effect 1</h2>
+					   <a class="info" href="#">link here</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm ">
+				<div class="hovereffect">
+					<img class="img-responsive" src="asset/images/300.jpg" alt="" height="400">
+					<div class="overlay">
+					   <h2>Hover effect 1</h2>
+					   <a class="info" href="#">link here</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<footer class="footer">
+	<div class=" text-center py-3">
+		<p>&copy; Copyright : Aftabuddin_Russel</p>
+    </div>
+	</footer>
+</body>
+</html>

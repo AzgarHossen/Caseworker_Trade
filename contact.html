@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caseworker Trade</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="asset/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="asset/js/bootstrap.min.js"></script>
+  <script js>
+  $(document).ready(function() {
+
+  var toggleAffix = function(affixElement, scrollElement, wrapper) {
+  
+    var height = affixElement.outerHeight(),
+        top = wrapper.offset().top;
+    
+    if (scrollElement.scrollTop() >= top){
+        wrapper.height(height);
+        affixElement.addClass("affix");
+    }
+    else {
+        affixElement.removeClass("affix");
+        wrapper.height('auto');
+    }
+      
+  };
+  
+
+  $('[data-toggle="affix"]').each(function() {
+    var ele = $(this),
+        wrapper = $('<div></div>');
+    
+    ele.before(wrapper);
+    $(window).on('scroll resize', function() {
+        toggleAffix(ele, $(this), wrapper);
+    });
+    
+    // init
+    toggleAffix(ele, $(window), wrapper);
+  });
+  
+});
+  </script>
+  <style>
+  
+  </style>
+</head>
+<body >
+	<div class="container ">
+		
+		<nav class=" navbar  navbar-expand-lg navbar-light border" data-toggle="affix">
+			<div class="container">
+				 <a class="navbar-brand" href="#"><img src="asset/images/logo.png" alt="" height="65" > Caseworker Trade</a>
+				 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+					<ul class="nav navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a class="nav-link " href="index.html"><i class="fas fa-home"></i> Home</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="product.html"><i class="fab fa-product-hunt"></i> Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-user"></i> About</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link active" href="contact.html"><i class="fas fa-file-contract"></i> Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	
+	<div class="container clear ">
+		<div class="text-center l">  
+			<h2 class="h2">Contact</h2>
+		</div>
+		<div class="row contact_us">
+			<div class="col-sm ">
+				<div class="">
+					
+					<form>
+						<div class="form-group">
+							<label for="exampleInputName1">Name</label>
+							<input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter Name">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputName1">Company Name</label>
+							<input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter Company Name">
+							
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputNumber1">Phone Number</label>
+							<input type="number" class="form-control" id="exampleInputNumber1" aria-describedby="numberHelp" placeholder="Enter Phone Number">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputNumber1">WhatsApp ID</label>
+							<input type="number" class="form-control" id="exampleInputNumber1" aria-describedby="numberHelp" placeholder="Enter WhatsApp ID">
+						</div>
+						<div class="custom-control custom-checkbox my-1 mr-sm-2">
+							<input type="checkbox" class="custom-control-input" id="customControlInline">
+							<label class="custom-control-label" for="customControlInline">Check me out</label>
+						</div>
+						 <button type="button" class="btn btn-primary btn-block">Submit</button> 
+					</form>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="m">
+					<h4>Better yet, see us in person!</h4>
+					<p>We love our customers, so feel free</p> 
+					<p>to visit during normal business hours.</p>
+				</div>
+				<div class="m">
+					<h4>K.A.S.BASHU & CO</h4>
+					<p>18/12 KUMARAPPA STREET, PERIAMET,</p> 
+					<p>CHENNAI, TN 600003, IN</p>
+					<p>REACH US : +9190030 24533</p> 
+					<p>EMAIL : imran.ahmed@kasbashu.in</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+    <div class="map-responsive">
+   <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+	<footer class="footer">
+	<div class=" text-center py-3">
+		<p>&copy; Copyright : Aftabuddin_Russel</p>
+    </div>
+	</footer>
+</body>
+</html>

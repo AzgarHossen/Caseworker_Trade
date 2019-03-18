@@ -1,0 +1,182 @@
+body{
+	margin: 0;
+	padding: 0;
+	position: relative; 
+}
+.border{border-bottom: 1px solid #D0D3D1;}
+.clear{padding:0px; outline:0px;margin-top: 70px;}
+
+.navbar{padding:15px !important;}
+.headersection{}
+.headersection h3{color:red;margin-left: 5px;}
+
+.socal-icon a{color: #000;padding: 9px 0px;}
+.socal-icon a i{padding: 9px 15px;}
+#facebook :hover{background:#415E9B !important;color:#fff !important;}
+#linkedin :hover{background:#0077B5 !important;color:#fff !important;}
+#twitter :hover{background:#1DA1F2 !important;color:#fff !important;}
+#google :hover{background:#BA2026 !important;color:#fff !important;}
+
+#main {
+    padding-top:70px;
+	
+}
+
+.navbar {
+  padding:2px !important;
+  border-radius: 0;
+  transition: all 0.3s ease-out;
+}
+.navbar-light .navbar-nav .nav-link
+	{    
+		color: #000;
+		padding: 6px 15px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+.navbar-light .navbar-nav .nav-link:hover{color:#FF0000;}
+
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* fixed to top styles */
+.affix.navbar {
+  background-color: #fff;
+}
+.affix.navbar .nav-item>a, 
+.affix.navbar .navbar-brand {
+    color: #000;
+}
+.aboutsection{background:#202E64;}
+.a{padding: 35px 120px;color: #fff;}
+.a h2{}
+.a h5 {margin-top: 30px;}
+.a p{color: #fff;
+    margin: 22px 0px 0px 45px;
+    text-align: justify;
+    line-height: 30px;}
+.contact h2{color: #000;padding: 0px 0px 35px 0px;font-style: italic;}
+.contact h4{color:#000;font-style: oblique;padding: 0px 0px 20px 0px;}
+.contact p{color: #000;line-height: 15px;font-family: cursive;}
+.address{padding: 0px 0px 50px 0px;}
+.footer{background: #000;color: #fff;height: 80px;}
+.footer p{margin-top: 10px;}
+.active{color:#FF0000 !important;}
+.contact_us{padding: 40px;}
+.m{padding: 40px 0px 0px 20px;}
+.m h4{margin: 0px 0px 30px 0px;font-size: 25px;font-style: italic;font-weight: bold;}
+.m p{margin: 5px;color: #838383;text-align: justify;}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.l{border-bottom: 2px dotted #c5c3c3;}
+.l h2{padding: 0px;font-size: 40px;margin: 0px 0px 15px 0px;font-weight: 500;font-family: cursive;}
+.product-list{margin: 35px 0px;}
+.product-list h4{margin: 20px 0px;}
+.hovereffect {
+		/*height:100%;*/
+		width:100%;
+		float:left;
+		overflow:hidden;
+		position:relative;
+		text-align:center;
+		cursor:default;
+		margin: 15px 0px;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+width:100%;
+}
+
+.hovereffect h2 {
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+position:relative;
+font-size:20px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
+margin-top: 120px;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+.images-hover{margin: 45px 10px;}
